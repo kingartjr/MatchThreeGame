@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match-3 Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="score-board">
+        <p>Score: <span id="score">0</span></p>
+        <p>Moves Left: <span id="moves">20</span></p>
+        <p>Time Remaining: <span id="timer">60</span>s</p>
+    </div>
+    <div id="objective">Objective: Match 10 red tiles</div>
+    <div id="game-board"></div>
+    <div id="controls">
+        <button id="start-game" class="btn">Start</button>
+        <button id="pause-game" class="btn">Pause</button>
+        <button id="reset-game" class="btn">Reset</button>
+    </div>
+    <div id="leaderboard">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard-list">
+            <!-- Leaderboard data will appear here -->
+        </ul>
+    </div>
+    <audio id="match-sound" src="match-sound.mp3"></audio>
+    <audio id="swap-sound" src="swap-sound.mp3"></audio>
+    <audio id="background-music" src="background-music.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
